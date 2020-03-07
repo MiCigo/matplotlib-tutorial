@@ -3,7 +3,7 @@
 @Description: code
 @Author: MiCi
 @Date: 2020-03-07 20:52:48
-@LastEditTime: 2020-03-07 22:54:56
+@LastEditTime: 2020-03-07 22:59:18
 @LastEditors: MiCi
 '''
 
@@ -79,6 +79,6 @@ def basic_label_practice_answer():
 
 
 if __name__ == '__main__':
-    print('hello world')
+    print('Start about basic label')
     basic_label()
     basic_label_practice_answer()
