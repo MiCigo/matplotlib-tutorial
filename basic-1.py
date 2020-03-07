@@ -3,7 +3,7 @@
 @Description: code
 @Author: MiCi
 @Date: 2020-03-07 20:52:48
-@LastEditTime: 2020-03-07 22:44:34
+@LastEditTime: 2020-03-07 22:54:56
 @LastEditors: MiCi
 '''
 
@@ -55,7 +55,14 @@ def basic_label():
 
 
 def basic_label_practice():
-    # 基础画图练习
+    # TODO
+    # 画出直线 y = x-1, 线型为虚线，线宽为1，纵坐标范围（-2，1）
+    # 横坐标范围（-1，2），横纵坐标在（0，0）坐标点相交。
+    # 横坐标的 [-1,-0.5,1] 分别对应 [bad, normal, good]
+    print('write your anwser')
+
+
+def basic_label_practice_answer():
     x = np.linspace(-1, 2, 50)
     y = x - 1
     plt.figure()
@@ -74,4 +81,4 @@ def basic_label_practice():
 if __name__ == '__main__':
     print('hello world')
     basic_label()
-    basic_label_practice()
+    basic_label_practice_answer()
