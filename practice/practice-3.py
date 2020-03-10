@@ -2,7 +2,7 @@
 @Description: code
 @Author: MiCi
 @Date: 2020-03-10 19:59:21
-@LastEditTime: 2020-03-10 20:06:48
+@LastEditTime: 2020-03-10 20:14:22
 @LastEditors: MiCi
 '''
 
@@ -39,6 +39,17 @@ class Practice3(object):
         plt.ylabel('value y')
         plt.title('三角函数')
         plt.grid()
+
+        plt.subplot(2, 3, 3)
+        x3 = np.linspace(0.05, 10, 100)
+        y3 = np.sin(x3)
+        plt.plot(x3, y3)
+        plt.axhline(y3=0.8, ls='--', c='r')
+
+        plt.subplot(2, 3, 4)
+        x4 = np.linspace(0.05, 10, 100)
+        y4 = np.sin(x4)
+        plt.plot(x4, y4)
 
         plt.show()
 
