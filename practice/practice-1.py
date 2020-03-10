@@ -2,7 +2,7 @@
 @Description: code
 @Author: MiCi
 @Date: 2020-03-09 20:20:16
-@LastEditTime: 2020-03-09 21:22:20
+@LastEditTime: 2020-03-10 14:32:04
 @LastEditors: MiCi
 '''
 
@@ -92,14 +92,16 @@ class Practice1(object):
 
     def exercise_4(self):
         '''
-        请在3D坐标系下画出函数Z=3 (1-X)**2 np.e(-(X2) - (Y+1)2)- 10*(X/5 - X3 - Y5)*np.e(-X2-Y2)- 1/3*np.e(-(X+1)2 - Y**2);
+        请在3D坐标系下画出函数Z=3 (1-X)**2 np.e(-(X2) - (Y+1)2)- 
+        10*(X/5 - X3 - Y5)*np.e(-X2-Y2)- 1/3*np.e(-(X+1)2 - Y**2);
         并将其投影至 x=-4 和 z=-7 平面上;并添加colorbar
         '''
         X = np.arange(-4, 4, 0.25)
         Y = np.arange(-4, 4, 0.25)
         X, Y = np.meshgrid(X, Y)
-        Z = 3 * (1-X)**2 * np.e**(-(X**2) - (Y+1)**2) - 10*(X/5 - X**3 -
-                                                            Y**5)*np.e**(-X**2-Y**2) - 1/3*np.e**(-(X+1)**2 - Y**2)
+        Z = 3 * (1-X)**2 * np.e**(-(X**2) - (Y+1)**2) - \
+            10*(X/5 - X**3 - Y**5)*np.e**(-X**2-Y**2) - \
+            1/3*np.e**(-(X+1)**2 - Y**2)
         fig = plt.figure(figsize=(10, 6))
         ax = Axes3D(fig)
         cmap = 'Spectral'
@@ -112,7 +114,7 @@ class Practice1(object):
 
 
 if __name__ == '__main__':
-    print('Start about practice 1')
+    print('Practice 1')
     exampleLabel = Practice1()
     # exampleLabel.exercise_1()
     # exampleLabel.exercise_2()
