@@ -2,7 +2,7 @@
 @Description: code
 @Author: MiCi
 @Date: 2020-03-10 19:59:21
-@LastEditTime: 2020-03-10 20:14:22
+@LastEditTime: 2020-03-11 23:39:13
 @LastEditors: MiCi
 '''
 
@@ -44,12 +44,30 @@ class Practice3(object):
         x3 = np.linspace(0.05, 10, 100)
         y3 = np.sin(x3)
         plt.plot(x3, y3)
-        plt.axhline(y3=0.8, ls='--', c='r')
+        plt.axhline(y=0.8, ls='--', c='r')
 
         plt.subplot(2, 3, 4)
         x4 = np.linspace(0.05, 10, 100)
         y4 = np.sin(x4)
         plt.plot(x4, y4)
+        plt.axvspan(xmin=4, xmax=6, facecolor='r', alpha=0.3)
+        plt.axhspan(ymin=-0.2, ymax=0.2, facecolor='y', alpha=0.3)
+
+        plt.subplot(2, 3, 5)
+        x5 = np.linspace(0.05, 10, 100)
+        y5 = np.sin(x5)
+        plt.plot(x5, y5)
+        plt.text(3.2, 0, 'sin(x)', weight='bold', color='r')
+
+        plt.subplot(2, 3, 6)
+        x6 = np.linspace(0.05, 10, 100)
+        y6 = np.sin(x6)
+        plt.plot(x6, y6)
+        plt.annotate('maximum', xy=(np.pi/2, 1), xytext=(np.pi/2+1, 1),
+                     weight='bold',
+                     color='r',
+                     arrowprops=dict(arrowstyle='->', connectionstyle='arc3',
+                                     color='r'))
 
         plt.show()
 
