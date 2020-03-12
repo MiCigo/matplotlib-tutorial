@@ -2,7 +2,7 @@
 @Description: code
 @Author: MiCi
 @Date: 2020-03-07 23:38:05
-@LastEditTime: 2020-03-08 15:56:37
+@LastEditTime: 2020-03-12 10:47:47
 @LastEditors: MiCi
 '''
 
@@ -99,7 +99,7 @@ class BasciLabel3(object):
 
 
 if __name__ == '__main__':
-    print('Start about basic label 3')
+    print('Start learn basic label 3')
     exampleLabel = BasciLabel3()
     # 散点图
     # exampleLabel.scatter_label()
