@@ -2,7 +2,7 @@
 @Description: code
 @Author: MiCi
 @Date: 2020-03-08 20:15:59
-@LastEditTime: 2020-03-09 20:14:57
+@LastEditTime: 2020-03-12 10:48:03
 @LastEditors: MiCi
 '''
 
@@ -90,7 +90,7 @@ class BasciLabel5(object):
 
 
 if __name__ == '__main__':
-    print('Start about basic label 5')
+    print('Start learn basic label 5')
     exampleLabel = BasciLabel5()
     # 3D图
     # exampleLabel.a3d_label()

@@ -2,7 +2,7 @@
 @Description: code
 @Author: MiCi
 @Date: 2020-03-08 15:58:24
-@LastEditTime: 2020-03-08 20:11:27
+@LastEditTime: 2020-03-12 10:47:39
 @LastEditors: MiCi
 '''
 
@@ -108,7 +108,7 @@ class BasciLabel4(object):
 
 
 if __name__ == '__main__':
-    print('Start about basic label 4')
+    print('Start learn basic label 4')
     exampleLabel = BasciLabel4()
     # subplot多合一
     # exampleLabel.subplot_label()
